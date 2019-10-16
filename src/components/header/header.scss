@@ -1,0 +1,33 @@
+$font-color: #fff;
+
+.flex-container{
+    display: flex;
+    align-items: baseline;
+    font-family: 'Montserrat', sans-serif;
+    p{
+        display: block;
+        font-size: 24px;
+        padding-left: 50px;
+        color: $font-color;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content:  center;
+        margin: auto;
+
+
+        li{
+            display: block;
+            padding-left: 120px;
+            list-style: none;
+            color: $font-color;
+            &:hover{
+                text-decoration: underline;
+                color: aqua;
+            }
+        }
+        
+    }
+
+}
