@@ -1,0 +1,31 @@
+.person-detailes-container{
+    display: flex;
+    padding: 30px;
+    margin:auto;
+    margin-top: 20px;
+    background-color: #1a1919; 
+    width: 500px;
+    color: #fff;
+    font-family: 'Montserrat';
+
+    img{
+        display: block;
+        width: 250px;
+        height: 300px;
+    }
+
+    .info-person{
+        display: block;
+        width: 200px;
+        padding: 0 0 0 60px;
+        line-height: 60px;
+        .name{
+            span{
+                font-size: 20px;
+                font-weight: bold;
+
+            }
+        }
+    }
+
+}

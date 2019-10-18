@@ -47,6 +47,13 @@ class SwapiService {
                 diameter: planet.diameter
         }
     }
+
+    _transformAllPeople(people){
+        return{
+           
+             
+        }
+    }
 }
 
 

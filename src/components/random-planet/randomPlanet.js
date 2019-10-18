@@ -33,26 +33,24 @@ class RandomPlanet extends Component{
         const id = Math.floor(Math.random()*20) + 2;
         this.swapiService.getPlanet(id)
         .then(this.onPlanetLoaded)
-        
+        .catch(this.onError);
+    }
+
+    onError = (err) => {
+
     }
     
 
     render(){
-
-       const { planet, loading } = this.state; 
-
-        // if(loading){
-        //     return <Spinner/>
-        // }
+        const { planet, loading } = this.state; 
         const spinner = loading ? <Spinner/> : null;
         const content = !loading ? <PlanetView planet={planet}/> : null;
         return(
             <div className="planet-container">
                 <div className="spinner">
                     {spinner}
-                    {content}
                 </div>
-                
+                    {content}
             </div>
         )
     }

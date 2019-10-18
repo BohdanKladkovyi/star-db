@@ -1,16 +1,15 @@
 .planet-container{
     display: flex;
-    
-    width: 900px;
-    margin: 30px 15% 0 15%;
+    margin: auto;
+    margin-top: 30px;
+    width: 600px;
+    // margin: 30px 15% 0 15%;
     height: auto;
     background-color: #1a1919; 
     color: #fff;
-    padding: 30px 30px 30px 30px;
+    padding: 30px;
     
-    .spinner{
-        text-align: center;
-    }
+    
     .planet-img{
         img{
         display: block;
@@ -22,7 +21,10 @@
     .planet-info{
         display: block;
         width: 400px;
-        padding: 0 0 0 80px;
+        padding: 0 0 0 60px;
         font-family: "Montserrat";
     }
 }
+// .spinner{
+//     margin:auto;
+//  }
