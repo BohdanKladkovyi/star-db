@@ -23,7 +23,7 @@ class PersonDetailes extends Component{
     render(){
         return(
             <div className="person-detailes-container">
-                <img src="https://starwars-visualguide.com/assets/img/characters/3.jpg" alt="person-detail"/>
+                <img src="https://starwars-visualguide.com/assets/img/characters/1.jpg" alt="person-detail"/>
                 <div className="info-person">
                 <div className="name">
                     <span>R2-D2</span>  
