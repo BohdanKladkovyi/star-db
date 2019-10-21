@@ -12,10 +12,11 @@ class SwapiService {
 
     async getAllPeople(){
         const res = await this.getResource(`/people/`);
-        return res.results;
+        return res.results.map(this._transformPerson);
     }
-    getPerson(id){
-        return this.getResource(`/people/${id}`);
+    async getPerson(id){
+        const person = await this.getResource(`/people/${id}`)
+        return this._transformPerson(person);
     }
 
     async getAllPlanets(){
@@ -48,9 +49,15 @@ class SwapiService {
         }
     }
 
-    _transformAllPeople(people){
+    _transformPerson(person){
+
+        const idRegExpperson = /\/([0-9]*)\/$/;
+        const id = person.url.match(idRegExpperson)[1];
         return{
-           
+            id,
+            name: person.name,
+            gender: person.gender,
+            eyeColor: person.eye_color
              
         }
     }
