@@ -29,8 +29,10 @@ class RandomPlanet extends Component{
         })
     }
 
+
+    //function for dynamic "get"  random id for planets
     updatePlanet(){
-        const id = Math.floor(Math.random()*20) + 2;
+        const id = Math.floor(Math.random()*18) + 1;
         this.swapiService.getPlanet(id)
         .then(this.onPlanetLoaded)
         .catch(this.onError);
