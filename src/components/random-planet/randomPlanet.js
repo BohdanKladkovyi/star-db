@@ -17,10 +17,14 @@ class RandomPlanet extends Component{
         loading: true
     };
 
-    constructor() {
-        super();
+    componentDidMount(){
         this.updatePlanet();
     }
+
+    // constructor() {
+    //     super();
+       
+    // }
 
     onPlanetLoaded = (planet) => {
         this.setState({
@@ -31,7 +35,7 @@ class RandomPlanet extends Component{
 
 
     //function for dynamic "get"  random id for planets
-    updatePlanet(){
+    updatePlanet(){  
         const id = Math.floor(Math.random()*18) + 1;
         this.swapiService.getPlanet(id)
         .then(this.onPlanetLoaded)
