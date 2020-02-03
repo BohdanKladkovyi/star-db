@@ -16,10 +16,13 @@ import './app.scss';
 
 const App = () => {
     return (
+        
         <div className="wrapper">
             <Header/>
+            <div>    
             <RandomPlanet/>
             <PersonDetailes/>
+            </div>
             {/* <PlanetDetailes/> */}
             <ItemList/>
            

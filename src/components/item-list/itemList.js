@@ -15,7 +15,7 @@ class ItemList extends Component{
     state = {
         peopleList: null
     }
-
+    
     componentDidMount(){
         this.swapiService.getAllPeople()
         .then((peopleList) => {
@@ -35,7 +35,7 @@ class ItemList extends Component{
             <div>
                 <ul>
                     <li>
-                        we
+                      
                     </li>
                     <li>
                         fews
