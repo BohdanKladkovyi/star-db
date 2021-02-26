@@ -1,6 +1,6 @@
 class SwapiService {
 
-    _apiBase =  'https://swapi.co/api';
+    _apiBase =  'https://swapi.dev/api';
     
     async getResource(url) {
         const res = await fetch(`${this._apiBase}${url}`);
