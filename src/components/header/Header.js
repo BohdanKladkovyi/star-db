@@ -9,8 +9,8 @@ const Header = () => {
             <p>Star DB</p>
            <nav>
                <li>StarShip</li>
-               <li>People</li>
                <li>Planets</li>
+      
            </nav>
         </div>
     )
